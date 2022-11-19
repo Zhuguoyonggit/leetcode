@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/AseY1I.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/AseY1I.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer II 005" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/AseY1I.java" />
+              <option name="titleSlug" value="aseY1I" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/BestTimeToBuyAndSellStock.java">
           <value>
             <LeetcodeEditor>
@@ -132,6 +143,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/FibonacciNumber.java" />
               <option name="titleSlug" value="fibonacci-number" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/FindClosestLcci.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/FindClosestLcci.md" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 17.11" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/FindClosestLcci.java" />
+              <option name="titleSlug" value="find-closest-lcci" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -388,6 +410,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/QIsx9U.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/QIsx9U.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer II 041" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/QIsx9U.java" />
+              <option name="titleSlug" value="qIsx9U" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ShuZiXuLieZhongMouYiWeiDeShuZiLcof.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ShuZiXuLieZhongMouYiWeiDeShuZiLcof.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 44" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ShuZiXuLieZhongMouYiWeiDeShuZiLcof.java" />
+              <option name="titleSlug" value="shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/TargetSum.java">
           <value>
             <LeetcodeEditor>
@@ -440,6 +484,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/UniquePathsIi.java" />
               <option name="titleSlug" value="unique-paths-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/W3tCBm.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/W3tCBm.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer II 003" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/W3tCBm.java" />
+              <option name="titleSlug" value="w3tCBm" />
             </LeetcodeEditor>
           </value>
         </entry>
