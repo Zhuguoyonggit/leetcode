@@ -1,0 +1,400 @@
+Index: src/leetcode/editor/cn/doc/content/GroupAnagramsLcci.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/leetcode/editor/cn/doc/content/GroupAnagramsLcci.md b/src/leetcode/editor/cn/doc/content/GroupAnagramsLcci.md
+new file mode 100644
+--- /dev/null	(date 1668692166883)
++++ b/src/leetcode/editor/cn/doc/content/GroupAnagramsLcci.md	(date 1668692166883)
+@@ -0,0 +1,22 @@
++<p>编写一种方法，对字符串数组进行排序，将所有变位词组合在一起。变位词是指字母相同，但排列不同的字符串。</p>
++
++<p><strong>注意：</strong>本题相对原题稍作修改</p>
++
++<p><strong>示例:</strong></p>
++
++<pre><strong>输入:</strong> <span><code>["eat", "tea", "tan", "ate", "nat", "bat"]</code></span>,
++<strong>输出:</strong>
++[
++  ["ate","eat","tea"],
++  ["nat","tan"],
++  ["bat"]
++]</pre>
++
++<p><strong>说明：</strong></p>
++
++<ul> 
++ <li>所有输入均为小写字母。</li> 
++ <li>不考虑答案输出的顺序。</li> 
++</ul>
++
++<div><div>Related Topics</div><div><li>数组</li><li>哈希表</li><li>字符串</li><li>排序</li></div></div><br><div><li>👍 105</li><li>👎 0</li></div>
+\ No newline at end of file
+Index: src/leetcode/editor/cn/GroupAnagramsLcci.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/leetcode/editor/cn/GroupAnagramsLcci.java b/src/leetcode/editor/cn/GroupAnagramsLcci.java
+new file mode 100644
+--- /dev/null	(date 1668694858148)
++++ b/src/leetcode/editor/cn/GroupAnagramsLcci.java	(date 1668694858148)
+@@ -0,0 +1,57 @@
++  //编写一种方法，对字符串数组进行排序，将所有变位词组合在一起。变位词是指字母相同，但排列不同的字符串。 
++//
++// 注意：本题相对原题稍作修改 
++//
++// 示例: 
++//
++// 输入: ["eat", "tea", "tan", "ate", "nat", "bat"],
++//输出:
++//[
++//  ["ate","eat","tea"],
++//  ["nat","tan"],
++//  ["bat"]
++//] 
++//
++// 说明： 
++//
++// 
++// 所有输入均为小写字母。 
++// 不考虑答案输出的顺序。 
++// 
++//
++// Related Topics 数组 哈希表 字符串 排序 👍 105 👎 0
++
++  
++  package leetcode.editor.cn;
++
++  import java.util.*;
++
++  public class GroupAnagramsLcci{
++      public static void main(String[] args) {
++           Solution solution = new GroupAnagramsLcci().new Solution();
++      }
++      //leetcode submit region begin(Prohibit modification and deletion)
++class Solution {
++    public List<List<String>> groupAnagrams(String[] strs) {
++        Map<String, List<String>> map = new HashMap<>();
++        for (String str : strs) {
++            String key = transform(str);
++            List<String> list = map.getOrDefault(key, new ArrayList<>());
++            list.add(str);
++            // 别忘了还要加回去
++            map.put(key, list);
++        }
++        return new ArrayList<List<String>>(map.values());
++    }
++
++    public String transform(String s) {
++        int[] res = new int[26];
++        for (int i = 0; i < s.length(); i++) {
++            res[s.charAt(i) - 'a']++;
++        }
++        return Arrays.toString(res);
++    }
++}
++//leetcode submit region end(Prohibit modification and deletion)
++
++  }
+\ No newline at end of file
+Index: src/leetcode/editor/cn/doc/content/ZeroMatrixLcci.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/leetcode/editor/cn/doc/content/ZeroMatrixLcci.md b/src/leetcode/editor/cn/doc/content/ZeroMatrixLcci.md
+new file mode 100644
+--- /dev/null	(date 1668690691442)
++++ b/src/leetcode/editor/cn/doc/content/ZeroMatrixLcci.md	(date 1668690691442)
+@@ -0,0 +1,37 @@
++<p>编写一种算法，若M × N矩阵中某个元素为0，则将其所在的行与列清零。</p>
++
++<p>&nbsp;</p>
++
++<p><strong>示例 1：</strong></p>
++
++<pre><strong>输入：</strong>
++[
++  [1,1,1],
++  [1,0,1],
++  [1,1,1]
++]
++<strong>输出：</strong>
++[
++  [1,0,1],
++  [0,0,0],
++  [1,0,1]
++]
++</pre>
++
++<p><strong>示例 2：</strong></p>
++
++<pre><strong>输入：</strong>
++[
++  [0,1,2,0],
++  [3,4,5,2],
++  [1,3,1,5]
++]
++<strong>输出：</strong>
++[
++  [0,0,0,0],
++  [0,4,5,0],
++  [0,3,1,0]
++]
++</pre>
++
++<div><div>Related Topics</div><div><li>数组</li><li>哈希表</li><li>矩阵</li></div></div><br><div><li>👍 147</li><li>👎 0</li></div>
+\ No newline at end of file
+Index: src/leetcode/editor/cn/OneAwayLcci.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/leetcode/editor/cn/OneAwayLcci.java b/src/leetcode/editor/cn/OneAwayLcci.java
+new file mode 100644
+--- /dev/null	(date 1668690664452)
++++ b/src/leetcode/editor/cn/OneAwayLcci.java	(date 1668690664452)
+@@ -0,0 +1,71 @@
++  //字符串有三种编辑操作:插入一个英文字符、删除一个英文字符或者替换一个英文字符。 给定两个字符串，编写一个函数判定它们是否只需要一次(或者零次)编辑。 
++//
++// 
++//
++// 示例 1: 
++//
++// 
++//输入: 
++//first = "pale"
++//second = "ple"
++//输出: True 
++//
++// 
++//
++// 示例 2: 
++//
++// 
++//输入: 
++//first = "pales"
++//second = "pal"
++//输出: False
++// 
++//
++// Related Topics 双指针 字符串 👍 229 👎 0
++
++  
++  package leetcode.editor.cn;
++
++  import sun.util.locale.provider.FallbackLocaleProviderAdapter;
++
++  public class OneAwayLcci{
++      public static void main(String[] args) {
++           Solution solution = new OneAwayLcci().new Solution();
++      }
++      //leetcode submit region begin(Prohibit modification and deletion)
++class Solution {
++    public boolean oneEditAway(String first, String second) {
++        // 第一次用的for循环写挺麻烦，同时漏了考虑一些问题，双指针加while就好些
++        int m = first.length();
++        int n = second.length();
++        if (Math.abs(m - n) > 1) {
++            return  false;
++        }
++        int count = 0;
++        int i = 0;
++        int j = 0;
++        // 这个判断很好，不用下面进行比长短了
++        if (m > n) {
++            return oneEditAway(second, first);
++        }
++        while (i < m && i < n && count <= 1) {
++            if (first.charAt(i) == second.charAt(j)) {
++                i++;
++                j++;
++            } else {
++                if (n == m) {
++                    i++;
++                    j++;
++                    count++;
++                } else {
++                    j++;
++                    count++;
++                }
++            }
++        }
++        return count <= 1;
++    }
++}
++//leetcode submit region end(Prohibit modification and deletion)
++
++  }
+\ No newline at end of file
+Index: src/leetcode/editor/cn/doc/content/Sfvd7V.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/leetcode/editor/cn/doc/content/Sfvd7V.md b/src/leetcode/editor/cn/doc/content/Sfvd7V.md
+new file mode 100644
+--- /dev/null	(date 1668692164529)
++++ b/src/leetcode/editor/cn/doc/content/Sfvd7V.md	(date 1668692164529)
+@@ -0,0 +1,41 @@
++<p>给定一个字符串数组 <code>strs</code> ，将&nbsp;<strong>变位词&nbsp;</strong>组合在一起。 可以按任意顺序返回结果列表。</p>
++
++<p><strong>注意：</strong>若两个字符串中每个字符出现的次数都相同，则称它们互为变位词。</p>
++
++<p>&nbsp;</p>
++
++<p><strong>示例 1:</strong></p>
++
++<pre>
++<strong>输入:</strong> strs = <span><code>["eat", "tea", "tan", "ate", "nat", "bat"]</code></span>
++<strong>输出: </strong>[["bat"],["nat","tan"],["ate","eat","tea"]]</pre>
++
++<p><strong>示例 2:</strong></p>
++
++<pre>
++<strong>输入:</strong> strs = <span><code>[""]</code></span>
++<strong>输出: </strong>[[""]]
++</pre>
++
++<p><strong>示例 3:</strong></p>
++
++<pre>
++<strong>输入:</strong> strs = <span><code>["a"]</code></span>
++<strong>输出: </strong>[["a"]]</pre>
++
++<p>&nbsp;</p>
++
++<p><strong>提示：</strong></p>
++
++<ul> 
++ <li><code>1 &lt;= strs.length &lt;= 10<sup>4</sup></code></li> 
++ <li><code>0 &lt;= strs[i].length &lt;= 100</code></li> 
++ <li><code>strs[i]</code>&nbsp;仅包含小写字母</li> 
++</ul>
++
++<p>&nbsp;</p>
++
++<p>
++ <meta charset="UTF-8" />注意：本题与主站 49&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/group-anagrams/">https://leetcode-cn.com/problems/group-anagrams/</a></p>
++
++<div><div>Related Topics</div><div><li>数组</li><li>哈希表</li><li>字符串</li><li>排序</li></div></div><br><div><li>👍 42</li><li>👎 0</li></div>
+\ No newline at end of file
+Index: src/leetcode/editor/cn/ZeroMatrixLcci.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/leetcode/editor/cn/ZeroMatrixLcci.java b/src/leetcode/editor/cn/ZeroMatrixLcci.java
+new file mode 100644
+--- /dev/null	(date 1668692124974)
++++ b/src/leetcode/editor/cn/ZeroMatrixLcci.java	(date 1668692124974)
+@@ -0,0 +1,71 @@
++  //编写一种算法，若M × N矩阵中某个元素为0，则将其所在的行与列清零。 
++//
++// 
++//
++// 示例 1： 
++//
++// 输入：
++//[
++//  [1,1,1],
++//  [1,0,1],
++//  [1,1,1]
++//]
++//输出：
++//[
++//  [1,0,1],
++//  [0,0,0],
++//  [1,0,1]
++//]
++// 
++//
++// 示例 2： 
++//
++// 输入：
++//[
++//  [0,1,2,0],
++//  [3,4,5,2],
++//  [1,3,1,5]
++//]
++//输出：
++//[
++//  [0,0,0,0],
++//  [0,4,5,0],
++//  [0,3,1,0]
++//]
++// 
++//
++// Related Topics 数组 哈希表 矩阵 👍 147 👎 0
++
++  
++  package leetcode.editor.cn;
++  public class ZeroMatrixLcci{
++      public static void main(String[] args) {
++           Solution solution = new ZeroMatrixLcci().new Solution();
++      }
++      //leetcode submit region begin(Prohibit modification and deletion)
++class Solution {
++    public void setZeroes(int[][] matrix) {
++        // 别人通过记录行列的布尔，自己却想操作，很显然操作的话会覆盖值是不合理的
++        // 判断是否是，应该选择Boolean，怎么能想到直接改呢
++        boolean[] row = new boolean[matrix.length];
++        boolean[] column = new boolean[matrix[0].length];
++        for (int i = 0; i < matrix.length; i++) {
++            for (int j = 0; j < matrix[0].length; j++) {
++                if (matrix[i][j] == 0) {
++                    row[i] = true;
++                    column[j] = true;
++                }
++            }
++        }
++        for (int i = 0; i < matrix.length; i++) {
++            for (int j = 0; j < matrix[0].length; j++) {
++                if (row[i] || column[j]) {
++                    matrix[i][j] = 0;
++                }
++            }
++        }
++    }
++}
++//leetcode submit region end(Prohibit modification and deletion)
++
++  }
+\ No newline at end of file
+Index: src/leetcode/editor/cn/doc/content/OneAwayLcci.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/leetcode/editor/cn/doc/content/OneAwayLcci.md b/src/leetcode/editor/cn/doc/content/OneAwayLcci.md
+new file mode 100644
+--- /dev/null	(date 1668688056860)
++++ b/src/leetcode/editor/cn/doc/content/OneAwayLcci.md	(date 1668688056860)
+@@ -0,0 +1,24 @@
++<p>字符串有三种编辑操作:插入一个英文字符、删除一个英文字符或者替换一个英文字符。 给定两个字符串，编写一个函数判定它们是否只需要一次(或者零次)编辑。</p>
++
++<p>&nbsp;</p>
++
++<p><strong>示例&nbsp;1:</strong></p>
++
++<pre>
++<strong>输入:</strong> 
++first = "pale"
++second = "ple"
++<strong>输出:</strong> True</pre>
++
++<p>&nbsp;</p>
++
++<p><strong>示例&nbsp;2:</strong></p>
++
++<pre>
++<strong>输入:</strong> 
++first = "pales"
++second = "pal"
++<strong>输出:</strong> False
++</pre>
++
++<div><div>Related Topics</div><div><li>双指针</li><li>字符串</li></div></div><br><div><li>👍 229</li><li>👎 0</li></div>
+\ No newline at end of file
