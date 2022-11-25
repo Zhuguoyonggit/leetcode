@@ -53,8 +53,6 @@
   
   package leetcode.editor.cn;
 
-  import java.util.LinkedList;
-
   public class VerifyPreorderSerializationOfABinaryTree{
       public static void main(String[] args) {
            Solution solution = new VerifyPreorderSerializationOfABinaryTree().new Solution();
@@ -62,18 +60,30 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isValidSerialization(String preorder) {
-        LinkedList<String> stack = new LinkedList<>();
+//        LinkedList<String> stack = new LinkedList<>();
+//        for (String s : preorder.split(",")) {
+//            stack.push(s);
+//            while (stack.size() >= 3 && stack.get(0).equals("#") && stack.get(1).equals("#") && !stack.get(2).equals("#")) {
+//                stack.pop();
+//                stack.pop();
+//                stack.pop();
+//                stack.push("#");
+//            }
+//        }
+//        // 这个长度是很有必要的
+//        return stack.size() == 1 && stack.pop().equals("#");
+        int diff = 1;
         for (String s : preorder.split(",")) {
-            stack.push(s);
-            while (stack.size() >= 3 && stack.get(0).equals("#") && stack.get(1).equals("#") && !stack.get(2).equals("#")) {
-                stack.pop();
-                stack.pop();
-                stack.pop();
-                stack.push("#");
+            diff -= 1;
+            if (diff < 0) {
+                return false;
+            }
+            // 判断该节点不是null节点
+            if (!s.equals("#")) {
+                diff += 2;
             }
         }
-        // 这个长度是很有必要的
-        return stack.size() == 1 && stack.pop().equals("#");
+        return diff == 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
