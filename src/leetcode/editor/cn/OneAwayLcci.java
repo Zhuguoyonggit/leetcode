@@ -26,8 +26,6 @@
   
   package leetcode.editor.cn;
 
-  import sun.util.locale.provider.FallbackLocaleProviderAdapter;
-
   public class OneAwayLcci{
       public static void main(String[] args) {
            Solution solution = new OneAwayLcci().new Solution();
@@ -57,9 +55,15 @@ class Solution {
                     i++;
                     j++;
                     count++;
+                    if (count > 1) {
+                        return false;
+                    }
                 } else {
                     j++;
                     count++;
+                    if (count > 1) {
+                        return false;
+                    }
                 }
             }
         }
