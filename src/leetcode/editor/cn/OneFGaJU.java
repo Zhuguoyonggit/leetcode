@@ -67,6 +67,9 @@ class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         // 本题要去重，显然从结果中去重是不理智的，通过排序进行去从就方便了很多
         Arrays.sort(nums);
+        if (nums.length < 3 || nums == null || nums[0] > 0) {
+            return new ArrayList<>();
+        }
         ArrayList<List<Integer>> res = new ArrayList<>();
         for (int i = 0; i < nums.length; i++) {
             // 对第一个数进行  去重,同时注意溢出问题
