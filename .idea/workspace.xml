@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/SLwz0R.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/SLwz0R.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/JumpGameIi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/SortColors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/JumpGameIi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/SortColors.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +183,7 @@
       <workItem from="1668918692312" duration="4416000" />
       <workItem from="1669379445278" duration="13746000" />
       <workItem from="1672574371762" duration="7870000" />
-      <workItem from="1672663114510" duration="6565000" />
+      <workItem from="1672663114510" duration="8549000" />
     </task>
     <task id="LOCAL-00001" summary="11.17">
       <created>1668695085515</created>
@@ -288,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672668385943</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="1.3">
+      <created>1672750099777</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1672750099777</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +342,8 @@
     <MESSAGE value="11.17" />
     <MESSAGE value="11.19" />
     <MESSAGE value="11.25" />
-    <option name="LAST_COMMIT_MESSAGE" value="11.25" />
+    <MESSAGE value="1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
