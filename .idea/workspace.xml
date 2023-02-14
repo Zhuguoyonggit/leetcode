@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code01_ReverseList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code02_DeleteGivenValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code06_TwoStacksImplementQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +69,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="cn.yiiguxing.plugin.translate" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -181,7 +182,7 @@
       <workItem from="1673015210005" duration="1581000" />
       <workItem from="1676292358820" duration="3672000" />
       <workItem from="1676344175412" duration="1535000" />
-      <workItem from="1676378928488" duration="2643000" />
+      <workItem from="1676378928488" duration="4577000" />
     </task>
     <task id="LOCAL-00001" summary="11.17">
       <created>1668695085515</created>
@@ -316,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676379100312</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Changes">
+      <created>1676382330507</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1676382330507</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
