@@ -11,6 +11,7 @@ public class Code07_TwoQueueImplementStack {
         public TwoQueueStack() {
             queue = new LinkedList();
             help = new LinkedList();
+
         }
 
         public void push(T value) {
