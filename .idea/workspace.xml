@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code02_PartitionAndQuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ReversePairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/StringTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ReversePairs.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/test.java" afterDir="false" />
+    <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code01_Comparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code02_Heap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/BestTimeToBuyAndSellStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/BestTimeToBuyAndSellStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/MaximumSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/MaximumSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/BestTimeToBuyAndSellStock$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/BestTimeToBuyAndSellStock$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/BestTimeToBuyAndSellStock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/BestTimeToBuyAndSellStock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/ContainsDuplicateIii$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/ContainsDuplicateIii$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/ContainsDuplicateIii.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/ContainsDuplicateIii.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/MaximumSubarray$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/MaximumSubarray$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/MaximumSubarray.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/MaximumSubarray.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +200,7 @@
       <workItem from="1676378928488" duration="15998000" />
       <workItem from="1676688654407" duration="3063000" />
       <workItem from="1676771494249" duration="369000" />
-      <workItem from="1676897872482" duration="3338000" />
+      <workItem from="1676897872482" duration="8733000" />
     </task>
     <task id="LOCAL-00001" summary="11.17">
       <created>1668695085515</created>
@@ -388,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676472254155</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Changes">
+      <created>1676902244169</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1676902244169</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
