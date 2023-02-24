@@ -50,6 +50,7 @@ public class HeapGreater<T> {
     }
 
     public void resign(T o) {
+        // 这时候是不知道是往上还是往下移动的
         heapInsert(indexMap.get(o));
         heapify(indexMap.get(o));
     }
