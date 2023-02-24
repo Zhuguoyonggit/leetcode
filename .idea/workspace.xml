@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code01_Comparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code02_Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code01_CoverMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code03_HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code03_SmallerEqualBigger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code04_CopyListWithRandom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code04_SortArrayDistanceLessK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/HeapGreater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/CopyListWithRandomPointer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/Code02_Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code02_Heap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +84,7 @@
       <recent name="E:\java\leetcode\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Code02_PartitionAndQuickSort">
+  <component name="RunManager" selected="Application.Code03_SmallerEqualBigger">
     <configuration name="Code02_PartitionAndQuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.Code02_PartitionAndQuickSort" />
       <module name="leetcode" />
@@ -90,8 +98,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepeatedDnaSequences" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.RepeatedDnaSequences" />
+    <configuration name="Code03_SmallerEqualBigger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.Code03_SmallerEqualBigger" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -103,8 +111,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShuZiXuLieZhongMouYiWeiDeShuZiLcof" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ShuZiXuLieZhongMouYiWeiDeShuZiLcof" />
+    <configuration name="Code04_SortArrayDistanceLessK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.Code04_SortArrayDistanceLessK" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -144,14 +152,16 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RepeatedDnaSequences" />
-      <item itemvalue="Application.ShuZiXuLieZhongMouYiWeiDeShuZiLcof" />
       <item itemvalue="Application.StringTest1" />
       <item itemvalue="Application.test" />
       <item itemvalue="Application.Code02_PartitionAndQuickSort" />
+      <item itemvalue="Application.Code04_SortArrayDistanceLessK" />
+      <item itemvalue="Application.Code03_SmallerEqualBigger" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Code03_SmallerEqualBigger" />
+        <item itemvalue="Application.Code04_SortArrayDistanceLessK" />
         <item itemvalue="Application.Code02_PartitionAndQuickSort" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.StringTest1" />
@@ -200,7 +210,8 @@
       <workItem from="1676378928488" duration="15998000" />
       <workItem from="1676688654407" duration="3063000" />
       <workItem from="1676771494249" duration="369000" />
-      <workItem from="1676897872482" duration="8733000" />
+      <workItem from="1676897872482" duration="12479000" />
+      <workItem from="1677070336243" duration="6139000" />
     </task>
     <task id="LOCAL-00001" summary="11.17">
       <created>1668695085515</created>
@@ -384,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676902244169</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Changes">
+      <created>1676988986332</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1676988986332</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,6 +451,17 @@
     <MESSAGE value="1.6" />
     <MESSAGE value="Changes" />
     <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/Code03_SmallerEqualBigger.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -57,7 +57,7 @@ public class Code02_Heap {
             while (left < heapSize) {
                 // 找到最大孩子的下标和值
                 int largest = left + 1 < heapSize && heap[left + 1] > heap[left] ? left + 1 : left;
-                largest = heap[index] > heap[largest] ? heap[index] : heap[largest];
+                largest = heap[index] > heap[largest] ? index : largest;
                 // 判断此时的最大值是不是index，如果是的话就可以跳出了
                 if (largest == index) {
                     break;
