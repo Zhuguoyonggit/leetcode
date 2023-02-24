@@ -8,7 +8,7 @@ public class Code04_RadixSort {
             return;
         }
         int digit = getMaxDigit(arr);
-        redix(arr, 0, arr.length - 1, digit);
+        radix(arr, 0, arr.length - 1, digit);
     }
 
     public static int getMaxDigit(int[] arr) {
@@ -24,7 +24,7 @@ public class Code04_RadixSort {
         return ans;
     }
 
-    public static void redix(int[] arr, int l, int r, int digit) {
+    public static void radix(int[] arr, int l, int r, int digit) {
         int radix = 10;
         int[] help = new int[r - l + 1];
         for (int i = 0; i < digit; i++) {// 有多少位就进出多少位
@@ -34,7 +34,7 @@ public class Code04_RadixSort {
                 count[getDigit(arr[j], i)]++;
             }
             // 算出count各位置之前有多少的数目
-            for (int j = l; j < r; j++) {
+            for (int j = 1; j <= radix; j++) {
                 count[j] = count[j - 1] + count[j];
             }
             // 从后往前进行遍历到help数组中
