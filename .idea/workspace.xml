@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code01_LinkedListMid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code02_IsPalindromeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/CyclicBarrierTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ReadAndWriteLockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/StopThreadDemo02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/TestSynchronized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/Code04_RadixSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code04_RadixSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/Code02_IsPalindromeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code02_IsPalindromeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +50,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HierarchyBrowserManager">
+    <option name="SCOPE" value="All" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://D:/jdk/jdk8/src.zip!/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
     <setting file="jar://D:/jdk/jdk8/src.zip!/java/util/AbstractCollection.java" root0="SKIP_INSPECTION" />
@@ -77,9 +86,9 @@
       <recent name="E:\java\leetcode\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Code03_SmallerEqualBigger">
-    <configuration name="Code02_PartitionAndQuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.Code02_PartitionAndQuickSort" />
+  <component name="RunManager" selected="Application.CyclicBarrierTest">
+    <configuration name="CyclicBarrierTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.CyclicBarrierTest" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -91,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code03_SmallerEqualBigger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.Code03_SmallerEqualBigger" />
+    <configuration name="ReadAndWriteLockTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ReadAndWriteLockTest" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -104,8 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code04_SortArrayDistanceLessK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.Code04_SortArrayDistanceLessK" />
+    <configuration name="StopThreadDemo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.StopThreadDemo02" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -117,10 +126,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.StringTest1" />
+    <configuration name="Ticket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.Ticket" />
       <module name="leetcode" />
-      <option name="VM_PARAMETERS" value="-XX:+PrintCommandLineFlags" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.editor.cn.*" />
@@ -131,8 +139,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.test" />
+    <configuration name="WaitTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.WaitTest" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -145,19 +153,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.StringTest1" />
-      <item itemvalue="Application.test" />
-      <item itemvalue="Application.Code02_PartitionAndQuickSort" />
-      <item itemvalue="Application.Code04_SortArrayDistanceLessK" />
-      <item itemvalue="Application.Code03_SmallerEqualBigger" />
+      <item itemvalue="Application.WaitTest" />
+      <item itemvalue="Application.StopThreadDemo02" />
+      <item itemvalue="Application.Ticket" />
+      <item itemvalue="Application.ReadAndWriteLockTest" />
+      <item itemvalue="Application.CyclicBarrierTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Code03_SmallerEqualBigger" />
-        <item itemvalue="Application.Code04_SortArrayDistanceLessK" />
-        <item itemvalue="Application.Code02_PartitionAndQuickSort" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.StringTest1" />
+        <item itemvalue="Application.CyclicBarrierTest" />
+        <item itemvalue="Application.ReadAndWriteLockTest" />
+        <item itemvalue="Application.Ticket" />
+        <item itemvalue="Application.StopThreadDemo02" />
+        <item itemvalue="Application.WaitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +212,7 @@
       <workItem from="1676688654407" duration="3063000" />
       <workItem from="1676771494249" duration="369000" />
       <workItem from="1676897872482" duration="12479000" />
-      <workItem from="1677070336243" duration="19081000" />
+      <workItem from="1677070336243" duration="32092000" />
     </task>
     <task id="LOCAL-00001" summary="11.17">
       <created>1668695085515</created>
@@ -423,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677241423750</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Changes">
+      <created>1677251083587</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1677251083587</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
