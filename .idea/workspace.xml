@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/CyclicBarrierTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/ReadAndWriteLockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Singleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/StopThreadDemo02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/TestSynchronized.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Ticket.java" afterDir="false" />
+    <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/InterruptRunnableDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/MyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/Code02_IsPalindromeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code02_IsPalindromeList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,16 +72,58 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\java\leetcode\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CyclicBarrierTest">
+  <component name="RunManager" selected="Application.InterruptWaitingDemo">
     <configuration name="CyclicBarrierTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.CyclicBarrierTest" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterruptRunnableDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.InterruptRunnableDemo" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterruptWaitingDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.InterruptWaitingDemo" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.MyService" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -113,59 +148,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StopThreadDemo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.StopThreadDemo02" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.editor.cn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ticket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.Ticket" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.editor.cn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WaitTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.WaitTest" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.editor.cn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.WaitTest" />
-      <item itemvalue="Application.StopThreadDemo02" />
-      <item itemvalue="Application.Ticket" />
       <item itemvalue="Application.ReadAndWriteLockTest" />
       <item itemvalue="Application.CyclicBarrierTest" />
+      <item itemvalue="Application.MyService" />
+      <item itemvalue="Application.InterruptRunnableDemo" />
+      <item itemvalue="Application.InterruptWaitingDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InterruptWaitingDemo" />
+        <item itemvalue="Application.InterruptRunnableDemo" />
+        <item itemvalue="Application.MyService" />
         <item itemvalue="Application.CyclicBarrierTest" />
         <item itemvalue="Application.ReadAndWriteLockTest" />
-        <item itemvalue="Application.Ticket" />
-        <item itemvalue="Application.StopThreadDemo02" />
-        <item itemvalue="Application.WaitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -213,6 +209,8 @@
       <workItem from="1676771494249" duration="369000" />
       <workItem from="1676897872482" duration="12479000" />
       <workItem from="1677070336243" duration="32092000" />
+      <workItem from="1677398158577" duration="744000" />
+      <workItem from="1677586051340" duration="3826000" />
     </task>
     <task id="LOCAL-00001" summary="11.17">
       <created>1668695085515</created>
