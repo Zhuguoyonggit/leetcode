@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code01_FindFirstIntersectNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code02_SerializeAndReconstructTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code03_UnRecursiveTraversalBT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code06_SuccessorNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code02_IsBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code03_IsBalanced.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/Code03_SmallerEqualBigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code03_SmallerEqualBigger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/Code04_CopyListWithRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code04_CopyListWithRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/Code01_IsCBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/Code01_IsCBT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +224,7 @@
       <workItem from="1678099399658" duration="9601000" />
       <workItem from="1678234794083" duration="3560000" />
       <workItem from="1678333999306" duration="1456000" />
-      <workItem from="1678360836055" duration="5348000" />
+      <workItem from="1678360836055" duration="9108000" />
     </task>
     <task id="LOCAL-00001" summary="11.17">
       <created>1668695085515</created>
@@ -462,7 +457,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677594199460</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Changes">
+      <created>1678369669631</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1678369669631</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Changes">
+      <created>1678369708499</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1678369708499</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
