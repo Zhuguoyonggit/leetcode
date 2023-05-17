@@ -30,6 +30,7 @@
 
   
   package leetcode.editor.cn;
+
   public class PartitionEqualSubsetSum{
       public static void main(String[] args) {
            Solution solution = new PartitionEqualSubsetSum().new Solution();
@@ -37,27 +38,21 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean canPartition(int[] nums) {
-        if (nums == null || nums.length == 0) {
-            return false;
-        }
         int sum = 0;
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
         }
-        // 这个判断挺重要
         if (sum % 2 != 0) {
             return false;
         }
-        // 由于背包的容量是sum/2，为方便数组长为sum/2+1
-        int[] dp = new int[sum / 2 + 1];
+        int target = sum / 2;
+        int[] dp = new int[target + 1];
         for (int i = 0; i < nums.length; i++) {
-            for (int j = sum / 2; j >= nums[i]; j--) {
-                // 滚动数组实现01背包
+            for (int j = target; j >= nums[i]; j--) {
                 dp[j] = Math.max(dp[j], dp[j - nums[i]] + nums[i]);
             }
         }
-
-        return dp[sum / 2] == sum / 2;
+        return dp[target] == target;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

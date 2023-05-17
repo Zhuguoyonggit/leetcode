@@ -49,25 +49,32 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+        // 1 当前位置是格挡物
         int m = obstacleGrid.length;
         int n = obstacleGrid[0].length;
-        int[][] res = new int[m][n];
+
+        if (obstacleGrid[0][0] == 1 || obstacleGrid[m - 1][n - 1] == 1) {
+            return 0;
+        }
+        int[][] dp = new int[m][n];
+        // 2 第一列有无格挡物
         for (int i = 0; i < m && obstacleGrid[i][0] == 0; i++) {
-            res[i][0] = 1;
+            dp[i][0] = 1;
         }
         for (int i = 0; i < n && obstacleGrid[0][i] == 0; i++) {
-            res[0][i] = 1;
+            dp[0][i] = 1;
         }
+        // 3 第一行有无格挡物
+
+        // 4.递推公式
         for (int i = 1; i < m; i++) {
             for (int j = 1; j < n; j++) {
-                if (obstacleGrid[i][j] == 1) {
-                    res[i][j] = 0;
-                } else {
-                    res[i][j] = res[i - 1][j] + res[i][j -1];
-                }
+                dp[i][j] = obstacleGrid[i][j] == 0 ? dp[i - 1][j] + dp[i][j - 1] : 0;
             }
         }
-        return res[m - 1][n - 1];
+
+        // 5.返回值
+        return dp[m - 1][n - 1];
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

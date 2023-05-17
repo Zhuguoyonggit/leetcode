@@ -37,15 +37,13 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int integerBreak(int n) {
+        // 假设j使得n拆解出最大值就需要比较 j*(n - j)和j * dp[n - j]的大小
         int[] dp = new int[n + 1];
-        int temp = 0;
-        for (int i = 2; i <= n; i++) {
-            for (int j = 1; j < i; j++) {
-                // 通过变量判断出最大值
-
-                temp = Math.max(temp, Math.max(j * (i - j), j * dp[i - j]));
+        dp[2] = 1;
+        for (int i = 3; i <= n; i++) {
+            for (int j = 1; j <= i - j; j++) {
+                dp[i] = Math.max(dp[i], Math.max(j * (i - j), j * dp[i - j]));
             }
-            dp[i] = temp;
         }
         return dp[n];
     }

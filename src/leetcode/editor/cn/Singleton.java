@@ -1,22 +1,29 @@
 package leetcode.editor.cn;
 
 public class Singleton {
-    // volatile如果不加可能会出现半初始化的对象
-    private static volatile Singleton singleton;
+
+    static {
+        System.out.println("init Singleton class...");
+    }
+
+    private static Singleton instance = createInstance();
+
+    private static Singleton createInstance() {
+        System.out.println("create singleton instance...");
+        return new Singleton();
+    }
 
     private Singleton() {
-
     }
 
-    public static Singleton getSingleton() {
-        if (singleton == null) {
-            synchronized (Singleton.class) {
-                if (singleton == null) {
-                    singleton = new Singleton();
-                }
-            }
-        }
-        return singleton;
+    public static Singleton getInstance() {
+        return instance;
     }
 
+    public static void main(String[] args) {
+        Singleton s = null;
+        System.out.println(Singleton.class);
+        s = Singleton.getInstance(); // create singleton instance...
+        System.out.println(s);
+    }
 }

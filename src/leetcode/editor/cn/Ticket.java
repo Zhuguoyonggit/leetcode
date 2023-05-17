@@ -16,7 +16,7 @@ public class Ticket implements Runnable{
     @Override
     public void run() {
         while (Ticket.COUNT > 0) {
-            ThreadUtils.sleep(100);
+            //ThreadUtils.sleep(100);
             // 就在这里
             lock.lock();
             try {

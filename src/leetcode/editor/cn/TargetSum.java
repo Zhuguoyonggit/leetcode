@@ -46,8 +46,6 @@
   
   package leetcode.editor.cn;
 
-  import java.util.BitSet;
-
   public class TargetSum{
       public static void main(String[] args) {
            Solution solution = new TargetSum().new Solution();
@@ -55,31 +53,29 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int findTargetSumWays(int[] nums, int target) {
-        // 思路，要有结果就要左面 left - (sum - left) = target -> left = (target + sum)/2
-        // 这里是个难点，也是能否转化为背包问题的关键
+
         int sum = 0;
-        for (int num : nums) {
-            sum += num;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
         }
-        // 考虑不能背包，不符合条件的是很关键的
+
         if (Math.abs(target) > sum) {
             return 0;
         }
-        if ((target + sum) % 2 != 0) {
+
+        if ((sum + target) % 2 != 0) {
             return 0;
         }
-        // 注意这里的值要大于零
-        int bagNumber = (sum + target) / 2 > 0 ? (sum + target) / 2 : - (sum + target) / 2;
-        int[] dp = new int[bagNumber + 1];
-        // 初始化很重要，千万不能忘记
+
+        int bigSize = Math.abs((=) / 2);
+        int[] dp = new int[bigSize + 1];
         dp[0] = 1;
         for (int i = 0; i < nums.length; i++) {
-            for (int j = bagNumber; j >= nums[i]; j--) {
-                // 地推公式的意思是已经有一个1（nums[i]） 的话，有 dp[4]种方法 凑成 dp[5]
+            for (int j = bigSize; j >= nums[i]; j--) {
                 dp[j] += dp[j - nums[i]];
             }
         }
-        return dp[bagNumber];
+        return dp[bigSize];
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -38,8 +38,8 @@ class Solution {
         // 本题难点就是递推公式的得出
         int[] dp = new int[n + 1];
         dp[0] = 1;
-        for (int i = 1; i < n + 1; i++) {
-            // j 为根节点，就累加求得
+        // 递推 dp[i] += dp[j - 1] * dp[i - j]
+        for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 dp[i] += dp[j - 1] * dp[i - j];
             }

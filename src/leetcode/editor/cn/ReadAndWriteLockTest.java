@@ -13,7 +13,7 @@ public class ReadAndWriteLockTest {
             ReentrantReadWriteLock.ReadLock readLock = lock.readLock();
             readLock.lock();
             try{
-                ThreadUtils.sleep(2000);
+                //ThreadUtils.sleep(2000);
                 System.out.println("我在读数据：" + COUNT);
             }finally {
                 readLock.unlock();
@@ -25,7 +25,7 @@ public class ReadAndWriteLockTest {
             ReentrantReadWriteLock.WriteLock writeLock = lock.writeLock();
             writeLock.lock();
             try{
-                ThreadUtils.sleep(2000);
+                //ThreadUtils.sleep(2000);
                 System.out.println("我在写数据：" + COUNT++);
             }finally {
                 writeLock.unlock();

@@ -59,4 +59,27 @@ public class Code01_IsCBT {
         }
         return new Info(isFull, isCbt, Math.max(leftInfo.height, rightInfo.height) + 1);
     }
+    public static class InfoFull{
+        public int height;
+        public boolean isFull;
+
+        public InfoFull(int height, boolean isFull) {
+            this.height = height;
+            this.isFull = isFull;
+        }
+    }
+
+    public static InfoFull processFull(Node node) {
+        if (node == null) {
+            return new InfoFull(0, true);
+        }
+        InfoFull leftInfo = processFull(node.left);
+        InfoFull rightInfo = processFull(node.right);
+        int height = Math.max(leftInfo.height, rightInfo.height) + 1;
+        boolean isFull = false;
+        if (leftInfo.isFull && rightInfo.isFull && leftInfo.height == rightInfo.height) {
+            isFull = true;
+        }
+        return new InfoFull(height, isFull);
+    }
 }

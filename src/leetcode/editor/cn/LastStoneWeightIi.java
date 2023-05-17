@@ -50,14 +50,14 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int lastStoneWeightII(int[] stones) {
-        // 分成两个差不多大小的堆，那么结果较小，背包求出小于一半的最大值就可以得出结果
         int sum = 0;
-        for (int stone : stones) {
-            sum += stone;
+        int len = stones.length;
+        for (int i = 0; i < len; i++) {
+            sum += stones[i];
         }
-        int target = sum / 2;
+        int target = sum >> 1;
         int[] dp = new int[target + 1];
-        for (int i = 0; i < stones.length; i++) {
+        for (int i = 0; i < len; i++) {
             for (int j = target; j >= stones[i]; j--) {
                 dp[j] = Math.max(dp[j], dp[j - stones[i]] + stones[i]);
             }
