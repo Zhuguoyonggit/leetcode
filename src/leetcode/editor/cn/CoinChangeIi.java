@@ -63,15 +63,16 @@ public class CoinChangeIi {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int change(int amount, int[] coins) {
-            // 递推数组
+            // 递推数组指的是amount的组合个数，这里的组合很重要
             int[] dp = new int[amount + 1];
-            // 初始化
-            dp[0] = 1;
-            for (int j = 0; j <= amount; j++) { // 遍历背包容量
-                for (int i = 0; i < coins.length; i++) { // 遍历物品
-                    if (j - coins[i] >= 0) dp[j] += dp[j - coins[i]];
+            dp[0] = 1;// 初始化为1，这样可以完成后面的递推表达式dp[i]+=dp[i - coins[j]]
+            // 先遍历物品还是背包的问题，要是组合就要先遍厉物品，保证物品不会重放
+            for (int i = 0; i < coins.length; i++) {
+                for (int j = coins[i]; j <= amount; j++) {
+                    dp[j] += dp[j - coins[i]];
                 }
             }
+
             return dp[amount];
         }
     }

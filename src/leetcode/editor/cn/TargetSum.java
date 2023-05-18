@@ -66,8 +66,8 @@ class Solution {
         if ((sum + target) % 2 != 0) {
             return 0;
         }
-
-        int bigSize = Math.abs((=) / 2);
+        int bigSize = 0;
+//        int bigSize = Math.abs((=) / 2);
         int[] dp = new int[bigSize + 1];
         dp[0] = 1;
         for (int i = 0; i < nums.length; i++) {

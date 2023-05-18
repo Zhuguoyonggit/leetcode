@@ -49,29 +49,28 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int findMaxForm(String[] strs, int m, int n) {
-        // 什么相当于物品，什么相当于价值，这里是strs相当于物品
-        // m,n作为价值就可以转换为0-1背包问题
+        // 确定dp[i][j], i是零的数目，j是1的数目，这就是个背包问题，价值是字符串的个数
+        // dp[i][j] = max(dp[i][j], dp[i - numZero][j - numOne])
+        // 注意遍历顺序要是从后往前
         int[][] dp = new int[m + 1][n + 1];
-        //        int zeroNum = 0;
-        //        int oneNum = 0;
         for (String str : strs) {
-            // 要在这里初始化并重置一和零的数目
-            int zeroNum = 0;
             int oneNum = 0;
+            int ZeroNum = 0;
             for (int i = 0; i < str.length(); i++) {
+                // 这里的判断条件写错了
                 if (str.charAt(i) == '0') {
-                    zeroNum++;
-                } else if (str.charAt(i) == '1') {
+                    ZeroNum++;
+                }else  {
                     oneNum++;
                 }
             }
-            // 遍历求得对应的值
-            for (int i = m; i >= zeroNum; i--) {
+            for (int i = m; i >= ZeroNum; i--) {
                 for (int j = n; j >= oneNum; j--) {
-                    dp[i][j] = Math.max(dp[i][j], dp[i - zeroNum][j - oneNum] + 1);
+                    dp[i][j] = Math.max(dp[i][j], dp[i - ZeroNum][j - oneNum] + 1);
                 }
             }
         }
+
         return dp[m][n];
     }
 }

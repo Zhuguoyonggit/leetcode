@@ -54,11 +54,12 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int combinationSum4(int[] nums, int target) {
+        // 本题看例子发现是一个完全背包求排列数的题目
         int[] dp = new int[target + 1];
         dp[0] = 1;
-        for (int i = 0; i <= target; i++) {
+        for (int i = 1; i <= target; i++) {
             for (int j = 0; j < nums.length; j++) {
-                if (i >= nums[j]) {
+                if (nums[j] <= i) {
                     dp[i] += dp[i - nums[j]];
                 }
             }
