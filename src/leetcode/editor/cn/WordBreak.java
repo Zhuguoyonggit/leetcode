@@ -56,18 +56,7 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
-        boolean[] dp = new boolean[s.length() + 1];
-        dp[0] = true;
-        Set<String> wordsSet = new HashSet<>(wordDict);
-        for (int i = 1; i <= s.length(); i++) {
-            for (int j = 0; j < i; j++) {
-                if (dp[j] && wordsSet.contains(s.substring(j, i))){
-                    dp[i] = true;
-                    break;
-                }
-            }
-        }
-        return dp[s.length()];
+        return 0l;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

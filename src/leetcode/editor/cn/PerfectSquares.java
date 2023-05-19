@@ -38,18 +38,19 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int numSquares(int n) {
+        // 完全背包的最大最小
         int[] dp = new int[n + 1];
         int max = Integer.MAX_VALUE;
-        dp[0] = 0;
-        // 物品数量和背包数量是要分清楚的
-        for (int i = 1; i < n + 1; i++) {
+        for (int i = 0; i < dp.length; i++) {
             dp[i] = max;
         }
+        dp[0] = 0;
+
+        // 先遍历物品，这个题意的物品可以通过含义遍历
         for (int i = 1; i * i <= n; i++) {
-            for (int j = 1; j <= n; j++) {
-                // >=,不要搞错了
-                if (j >= i * i) {
-                    dp[j] = Math.min(dp[j - i * i] + 1, dp[j]);
+            for (int j = i * i; j <= n; j++) {
+                if (dp[j - i * i] != max) {
+                    dp[j] = Math.min(dp[j], dp[j - i * i] + 1);
                 }
             }
         }
