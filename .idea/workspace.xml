@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/PerfectSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/PerfectSquares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/WordBreak.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,22 +81,9 @@
       <recent name="E:\java\leetcode\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CombinationSumIv">
+  <component name="RunManager" selected="Application.WordBreak">
     <configuration name="CombinationSumIv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.CombinationSumIv" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.editor.cn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Singleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.Singleton" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -136,6 +121,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WordBreak" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.WordBreak" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.test" />
       <module name="leetcode" />
@@ -150,19 +148,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Singleton" />
       <item itemvalue="Application.Task" />
       <item itemvalue="Application.test" />
       <item itemvalue="Application.Ticket" />
       <item itemvalue="Application.CombinationSumIv" />
+      <item itemvalue="Application.WordBreak" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WordBreak" />
         <item itemvalue="Application.CombinationSumIv" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.Ticket" />
         <item itemvalue="Application.Task" />
-        <item itemvalue="Application.Singleton" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +220,7 @@
       <workItem from="1684290585411" duration="5251000" />
       <workItem from="1684374412479" duration="1784000" />
       <workItem from="1684393335847" duration="990000" />
-      <workItem from="1684458328973" duration="2767000" />
+      <workItem from="1684458328973" duration="3274000" />
     </task>
     <task id="LOCAL-00001" summary="11.17">
       <created>1668695085515</created>
@@ -497,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684459900331</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Changes">
+      <created>1684461747344</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1684461747344</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

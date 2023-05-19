@@ -45,19 +45,34 @@
   
   package leetcode.editor.cn;
 
-  import java.util.HashSet;
   import java.util.List;
-  import java.util.Set;
 
   public class WordBreak{
       public static void main(String[] args) {
            Solution solution = new WordBreak().new Solution();
+
+          String a = "asd";
+          System.out.println(a.substring(0,1));
       }
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
-        return 0l;
+        boolean[] dp = new boolean[s.length() + 1];
+        dp[0] = true;
+        // 组成s的单词顺序不一定要是一致的，所以需要排列，就要先遍历背包容量
+        // 确定递推公式就是满足s，则j到s长度有单词，而且j可以通过单词组成
+        for (int i = 1; i <= s.length(); i++) {
+            for (String s1 : wordDict) {
+                if (i >= s1.length() && dp[i - s1.length()] && s1.equals(s.substring(i - s1.length(), i))) {
+                    dp[i] = true;
+                    // 这里break就行可以提高效率
+                    break;
+                }
+            }
+        }
+        return dp[s.length()];
     }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
