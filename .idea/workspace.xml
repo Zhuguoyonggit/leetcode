@@ -7,10 +7,17 @@
     <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/CoinChangeIi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/CoinChangeIi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/CoinChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/CoinChange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/CombinationSumIv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/CombinationSumIv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/OnesAndZeroes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/OnesAndZeroes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/TargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/TargetSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/CoinChangeIi$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/CoinChangeIi$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/CombinationSumIv$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/CombinationSumIv$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/CombinationSumIv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/CombinationSumIv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/LastStoneWeightIi$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/LastStoneWeightIi$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/OnesAndZeroes$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/OnesAndZeroes$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/PartitionEqualSubsetSum$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/PartitionEqualSubsetSum$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/PartitionEqualSubsetSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/PartitionEqualSubsetSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/TargetSum$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/TargetSum$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/TargetSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/TargetSum.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +93,20 @@
       <recent name="E:\java\leetcode\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.CombinationSumIv">
+    <configuration name="CombinationSumIv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.CombinationSumIv" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Singleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.Singleton" />
       <module name="leetcode" />
@@ -139,36 +159,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Code07_ZigZagPrintMaArix.testt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.editor.cn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leetcode.editor.cn" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.Code07_ZigZagPrintMaArix" />
-      <option name="METHOD_NAME" value="testt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Singleton" />
       <item itemvalue="Application.Task" />
       <item itemvalue="Application.test" />
       <item itemvalue="Application.Ticket" />
-      <item itemvalue="JUnit.Code07_ZigZagPrintMaArix.testt" />
+      <item itemvalue="Application.CombinationSumIv" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CombinationSumIv" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.Ticket" />
         <item itemvalue="Application.Task" />
         <item itemvalue="Application.Singleton" />
-        <item itemvalue="JUnit.Code07_ZigZagPrintMaArix.testt" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +229,10 @@
       <workItem from="1678498247560" duration="13613000" />
       <workItem from="1681886602388" duration="747000" />
       <workItem from="1681992918585" duration="13254000" />
-      <workItem from="1684290585411" duration="4872000" />
+      <workItem from="1684290585411" duration="5251000" />
+      <workItem from="1684374412479" duration="1784000" />
+      <workItem from="1684393335847" duration="990000" />
+      <workItem from="1684458328973" duration="1471000" />
     </task>
     <task id="LOCAL-00001" summary="11.17">
       <created>1668695085515</created>
@@ -486,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684290632485</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Changes">
+      <created>1684373829204</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1684373829204</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -50,6 +50,7 @@
   public class CombinationSumIv{
       public static void main(String[] args) {
            Solution solution = new CombinationSumIv().new Solution();
+           solution.combinationSum4(new int[]{1,2,3},4);
       }
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -63,6 +64,29 @@ class Solution {
                     dp[i] += dp[i - nums[j]];
                 }
             }
+            System.out.println("___________");
+            for (int j = 0; j < dp.length; j++) {
+                System.out.print(dp[j]);
+                System.out.print(' ');
+            }
+            System.out.println("___________");
+        }
+        System.out.println("*************");
+        for (int i = 0; i < dp.length; i++) {
+            dp[i] = 0;
+        }
+        dp[0] = 1;
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = nums[i]; j <= target; j++) {
+                dp[j] += dp[j - nums[i]];
+            }
+
+            System.out.println("___________");
+            for (int j = 0; j < dp.length; j++) {
+                System.out.print(dp[j]);
+                System.out.print(' ');
+            }
+            System.out.println("___________");
         }
         return dp[target];
     }

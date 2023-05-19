@@ -41,8 +41,6 @@
   
   package leetcode.editor.cn;
 
-  import javax.crypto.Cipher;
-
   public class CoinChange{
       public static void main(String[] args) {
            Solution solution = new CoinChange().new Solution();
@@ -50,22 +48,23 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int coinChange(int[] coins, int amount) {
-        int max = Integer.MAX_VALUE;
-        int n = coins.length;
+        // 完全背包问题
         int[] dp = new int[amount + 1];
-        for (int i = 0; i < amount + 1; i++) {
-            dp[i] = max;
+        for (int i = 0; i < dp.length; i++) {
+            dp[i] = Integer.MAX_VALUE;
         }
         dp[0] = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = coins[i]; j <= amount; j++) {
-                if (dp[j - coins[i]] != max) {
-                    dp[j] = Math.min(dp[j - coins[i]] + 1, dp[j]);
+
+        // 地推公式dp[i] = min(dp[i],dp[i - coins[j]] + 1)
+        for (int i = 1; i <= amount; i++) {
+            for (int j = 0; j < coins.length; j++) {
+                if (i >= coins[j] && dp[i - coins[j]] != Integer.MAX_VALUE) {
+                    dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
                 }
+
             }
         }
-        // 上面赋值的结果可能产生max
-        return dp[amount] == max ? -1 : dp[amount];
+        return dp[amount] == Integer.MAX_VALUE ? -1 : dp[amount];
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
