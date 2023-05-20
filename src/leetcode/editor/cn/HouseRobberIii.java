@@ -45,8 +45,6 @@
   
   package leetcode.editor.cn;
 
-  import javax.swing.tree.TreeNode;
-
   public class HouseRobberIii{
       public static void main(String[] args) {
            Solution solution = new HouseRobberIii().new Solution();
@@ -69,26 +67,23 @@ class TreeNode {
 
 class Solution {
     public int rob(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
-        if (root.left == null && root.right == null) {
-            return root.val;
-        }
-        return Math.max(robDp(root)[0], robDp(root)[1]);
+
+        int[] dp = robAction(root);
+        return Math.max(dp[0], dp[1]);
     }
-    // robDp本题可以使用动态规划来解答
-    public int[] robDp(TreeNode root) {
-        int[] res = new int[2];
+
+    private int[] robAction(TreeNode root) {
+        int[] dp = new int[2];
         if (root == null) {
-            return res;
+            return dp;
         }
-        int[] left = robDp(root.left);
-        int[] right = robDp(root.right);
-        res[0] = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
-        res[1] = root.val + left[0] + right[0];
-        return res;
+        int[] left = robAction(root.left);
+        int[] right = robAction(root.right);
+        dp[0] = Math.max(left[1], left[0]) + Math.max(right[1], right[0]);
+        dp[1] = right[0] + left[0] + root.val;
+        return dp;
     }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 

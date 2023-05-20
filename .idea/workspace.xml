@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/HouseRobber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/HouseRobber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/CoinChange$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/CoinChange$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/CoinChange.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/CoinChange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/PerfectSquares$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/PerfectSquares$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/WordBreak$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/WordBreak$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/WordBreak.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/WordBreak.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/HouseRobberIi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/HouseRobberIi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/HouseRobberIii.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/HouseRobberIii.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +224,7 @@
       <workItem from="1684374412479" duration="1784000" />
       <workItem from="1684393335847" duration="990000" />
       <workItem from="1684458328973" duration="3524000" />
-      <workItem from="1684543902627" duration="833000" />
+      <workItem from="1684543902627" duration="3227000" />
     </task>
     <task id="LOCAL-00001" summary="11.17">
       <created>1668695085515</created>
@@ -516,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684462465139</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Changes">
+      <created>1684544750498</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1684544750498</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

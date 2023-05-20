@@ -48,26 +48,32 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int rob(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
         if (nums.length == 1) {
             return nums[0];
-        } else if (nums.length == 2){
-            return Math.max(nums[0], nums[1]);
         }
-        return Math.max(robRange(nums, 0, nums.length - 2), robRange(nums, 1, nums.length - 1));
+        int num1 = robOne(nums, 0, nums.length - 2);
+        int num2 = robOne(nums, 1, nums.length - 1);
+        return Math.max(num1, num2);
     }
-    public int robRange(int[] nums, int start, int end) {
-        int first = nums[start];
-        int second = Math.max(nums[start], nums[start + 1]);
-        for (int i = start + 2; i <= end; i++) {
-            // 三行的逻辑要清晰
-            int temp = second;
-            second = Math.max(first + nums[i], second);
-            // 向后走
-            first = temp;
-        }
-        return second;
-    }
-}
+
+          private int robOne(int[] nums, int start, int end) {
+              if (start == end) {
+                  return nums[start];
+              }
+              int[] dp = new int[nums.length];
+              dp[start] = nums[start];
+              dp[start + 1] = Math.max(nums[start], nums[start + 1]);
+              for (int i = start + 2; i <= end; i++) {
+                  dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i]);
+              }
+
+
+              return dp[end];
+          }
+      }
 //leetcode submit region end(Prohibit modification and deletion)
 
   }
