@@ -40,7 +40,20 @@
 
   public class LongestContinuousIncreasingSubsequence{
       public static void main(String[] args) {
-           Solution solution = new LongestContinuousIncreasingSubsequence().new Solution();
+          Solution solution = new LongestContinuousIncreasingSubsequence().new Solution();
+          solution.findLengthOfLCIS(new int[]{1, 3, 5, 4, 7});
+      }
+      public int findLengthOfLCIS1(int[] nums) {
+          int[] dp = new int[nums.length];
+          Arrays.fill(dp, 1);
+          int res = 1;
+          for (int i = 0; i < dp.length - 1; i++) {
+              if (nums[i + 1] > nums[i]) {
+                  dp[i + 1] = dp[i] + 1;
+              }
+              res = res > dp[i + 1] ? res : dp[i + 1];
+          }
+          return res;
       }
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -48,11 +61,13 @@ class Solution {
         int[] dp = new int[nums.length];
         Arrays.fill(dp, 1);
         int res = 1;
-        for (int i = 0; i < dp.length - 1; i++) {
-            if (nums[i + 1] > nums[i]) {
-                dp[i + 1] = dp[i] + 1;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] > nums[i - 1]) {
+                dp[i] = dp[i - 1] + 1;
             }
-            res = res > dp[i + 1] ? res : dp[i + 1];
+            if (dp[i] > res) {
+                res = dp[i];
+            }
         }
         return res;
     }

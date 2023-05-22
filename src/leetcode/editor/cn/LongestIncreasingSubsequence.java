@@ -54,24 +54,42 @@
            Solution solution = new LongestIncreasingSubsequence().new Solution();
           System.out.println(solution.lengthOfLIS(new int[]{1, 3, 6, 7, 9, 4, 10, 5, 6}));
       }
+      public int lengthOfLIS1(int[] nums) {
+          if (nums.length == 1) {
+              return 1;
+          }
+          int[] dp = new int[nums.length];
+          Arrays.fill(dp, 1);
+          int res = 0;
+          for (int i = 0; i < nums.length; i++) {
+              for (int j = 0; j < i; j++) {
+                  if (nums[i] > nums[j]) {
+                      dp[i] = Math.max(dp[i], dp[j] + 1);
+                  }
+                  //为什么要比较，1,2,3,4,10,6,5，结果不是按序的，代码的意思是不断求在num[i] 前的大小
+                  if (dp[i] > res) {
+                      res = dp[i];
+                  }
+              }
+          }
+          return res;
+      }
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int lengthOfLIS(int[] nums) {
-        if (nums.length == 1) {
-            return 1;
-        }
+
         int[] dp = new int[nums.length];
-        Arrays.fill(dp, 1);
+        // 初始化数组，最小的长度是1
+        Arrays.fill(dp,1);
         int res = 0;
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < i; j++) {
                 if (nums[i] > nums[j]) {
                     dp[i] = Math.max(dp[i], dp[j] + 1);
                 }
-                //为什么要比较，1,2,3,4,10,6,5，结果不是按序的，代码的意思是不断求在num[i] 前的大小
-                if (dp[i] > res) {
-                    res = dp[i];
-                }
+            }
+            if (dp[i] > res) {
+                res = dp[i];
             }
         }
         return res;

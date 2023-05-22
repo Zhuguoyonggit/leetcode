@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/BestTimeToBuyAndSellStockIii.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/BestTimeToBuyAndSellStockIii.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/BestTimeToBuyAndSellStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/BestTimeToBuyAndSellStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/LongestContinuousIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/LongestContinuousIncreasingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/LongestIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/LongestIncreasingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/MaximumLengthOfRepeatedSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/MaximumLengthOfRepeatedSubarray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +88,7 @@
       <recent name="E:\java\leetcode\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WordBreak">
+  <component name="RunManager" selected="Application.LongestContinuousIncreasingSubsequence">
     <configuration name="CombinationSumIv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.CombinationSumIv" />
       <module name="leetcode" />
@@ -99,8 +102,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.Task" />
+    <configuration name="LongestContinuousIncreasingSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.LongestContinuousIncreasingSubsequence" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -152,19 +155,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Task" />
       <item itemvalue="Application.test" />
       <item itemvalue="Application.Ticket" />
       <item itemvalue="Application.CombinationSumIv" />
       <item itemvalue="Application.WordBreak" />
+      <item itemvalue="Application.LongestContinuousIncreasingSubsequence" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LongestContinuousIncreasingSubsequence" />
         <item itemvalue="Application.WordBreak" />
         <item itemvalue="Application.CombinationSumIv" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.Ticket" />
-        <item itemvalue="Application.Task" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +229,7 @@
       <workItem from="1684393335847" duration="990000" />
       <workItem from="1684458328973" duration="3524000" />
       <workItem from="1684543902627" duration="3304000" />
-      <workItem from="1684632502322" duration="3901000" />
+      <workItem from="1684632502322" duration="8709000" />
     </task>
     <task id="LOCAL-00001" summary="11.17">
       <created>1668695085515</created>
@@ -529,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684547790800</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Changes">
+      <created>1684739239136</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1684739239136</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
