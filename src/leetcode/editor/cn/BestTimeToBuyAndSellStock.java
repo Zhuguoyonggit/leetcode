@@ -42,19 +42,30 @@
       public static void main(String[] args) {
            Solution solution = new BestTimeToBuyAndSellStock().new Solution();
       }
+      public int maxProfit(int[] prices) {
+          int min = Integer.MAX_VALUE;
+          int res = 0;
+          for (int i = 1; i < prices.length; i++) {
+              if (prices[i - 1] < min){
+                  min = prices[i - 1];
+              }
+              res = Math.max(res, prices[i] - min);
+          }
+          return res;
+      }
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int maxProfit(int[] prices) {
-        int min = Integer.MAX_VALUE;
-        int res = 0;
+        int[] dp = new int[2];
+        dp[0] = -prices[0];
         for (int i = 1; i < prices.length; i++) {
-            if (prices[i - 1] < min){
-                min = prices[i - 1];
-            }
-            res = Math.max(res, prices[i] - min);
+            dp[0] = Math.max(dp[0], -prices[i]);
+            dp[1] = Math.max(dp[1], dp[0] + prices[i]);
         }
-        return res;
+
+        return dp[1];
     }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
