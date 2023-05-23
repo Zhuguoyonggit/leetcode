@@ -51,24 +51,55 @@
       public static void main(String[] args) {
            Solution solution = new LongestCommonSubsequence().new Solution();
       }
+      public int longestCommonSubsequence1(String text1, String text2) {
+          int[][] dp = new int[text1.length() + 1][text2.length() + 1];
+          // 遍历要到头，不能写忘了
+          for (int i = 1; i < text1.length() + 1; i++) {
+              char char1 = text1.charAt(i - 1);
+              for (int j = 1; j < text2.length() + 1; j++) {
+                  char char2 = text2.charAt(j - 1);
+                  if (char1 == char2) {
+                      dp[i][j] = dp[i - 1][j - 1] + 1;
+                  } else {
+                      dp[i][j] = Math.max(dp[i][j - 1], dp[i - 1][j]);
+                  }
+              }
+          }
+          return dp[text1.length()][text2.length()];
+      }
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int longestCommonSubsequence(String text1, String text2) {
         int[][] dp = new int[text1.length() + 1][text2.length() + 1];
-        // 遍历要到头，不能写忘了
-        for (int i = 1; i < text1.length() + 1; i++) {
-            char char1 = text1.charAt(i - 1);
-            for (int j = 1; j < text2.length() + 1; j++) {
-                char char2 = text2.charAt(j - 1);
-                if (char1 == char2) {
+        // s1[i] =s2[j] dp[i+1][j+1]= dp[i][j]
+        // s1[i] != s2[j] dp[i + 1][j + 1]=max(dp[i][j+1], dp[i+1][j])
+        for (int i = 1; i <= text1.length(); i++) {
+            for (int j = 1; j <= text2.length(); j++) {
+                if (text1.charAt(i - 1) == text2.charAt(j - 1)) {
                     dp[i][j] = dp[i - 1][j - 1] + 1;
                 } else {
                     dp[i][j] = Math.max(dp[i][j - 1], dp[i - 1][j]);
                 }
             }
         }
+
         return dp[text1.length()][text2.length()];
     }
+//public int longestCommonSubsequence(String text1, String text2) {
+//    int[][] dp = new int[text1.length() + 1][text2.length() + 1]; // 先对dp数组做初始化操作
+//    for (int i = 1 ; i <= text1.length() ; i++) {
+//        char char1 = text1.charAt(i - 1);
+//        for (int j = 1; j <= text2.length(); j++) {
+//            char char2 = text2.charAt(j - 1);
+//            if (char1 == char2) { // 开始列出状态转移方程
+//                dp[i][j] = dp[i - 1][j - 1] + 1;
+//            } else {
+//                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+//            }
+//        }
+//    }
+//    return dp[text1.length()][text2.length()];
+//}
 }
 //leetcode submit region end(Prohibit modification and deletion)
 

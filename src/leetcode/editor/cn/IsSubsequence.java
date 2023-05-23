@@ -46,25 +46,28 @@
       public static void main(String[] args) {
            Solution solution = new IsSubsequence().new Solution();
       }
+      public boolean isSubsequence1(String s, String t) {
+          int[][] dp = new int[s.length() + 1][t.length() + 1];
+          // 已经留出了初始化为零的第一列
+          for (int i = 1; i <= s.length(); i++) {
+              for (int j = 1; j <= t.length(); j++) {
+                  // 这里比较的是i-1的下标
+                  if (s.charAt(i - 1) == t.charAt(j - 1)) {
+                      dp[i][j] = dp[i - 1][j - 1] + 1;
+                  } else {
+                      dp[i][j] = dp[i][j - 1];
+                  }
+              }
+          }
+          if (dp[s.length()][t.length()] == s.length()) {
+              return true;
+          }
+          return false;
+      }
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isSubsequence(String s, String t) {
-        int[][] dp = new int[s.length() + 1][t.length() + 1];
-        // 已经留出了初始化为零的第一列
-        for (int i = 1; i <= s.length(); i++) {
-            for (int j = 1; j <= t.length(); j++) {
-                // 这里比较的是i-1的下标
-                if (s.charAt(i - 1) == t.charAt(j - 1)) {
-                    dp[i][j] = dp[i - 1][j - 1] + 1;
-                } else {
-                    dp[i][j] = dp[i][j - 1];
-                }
-            }
-        }
-        if (dp[s.length()][t.length()] == s.length()) {
-            return true;
-        }
-        return false;
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

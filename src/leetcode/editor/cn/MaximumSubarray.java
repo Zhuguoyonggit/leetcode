@@ -45,27 +45,40 @@
   package leetcode.editor.cn;
 
 
-  public class MaximumSubarray{
+  public class MaximumSubarray {
       public static void main(String[] args) {
-           Solution solution = new MaximumSubarray().new Solution();
+          Solution solution = new MaximumSubarray().new Solution();
       }
+
+      public int maxSubArray1(int[] nums) {
+          int[] dp = new int[nums.length];
+          dp[0] = nums[0];
+          // 初始化为第一个值
+          int max = nums[0];
+          for (int i = 1; i < nums.length; i++) {
+              dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
+              if (dp[i] > max) {
+                  max = dp[i];
+              }
+          }
+          // 注意这是每个位置时候的最大值，所以不应该返回结尾，应该是比较得到的最大值
+          return max;
+      }
+
       //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int maxSubArray(int[] nums) {
-        int[] dp = new int[nums.length];
-        dp[0] = nums[0];
-        // 初始化为第一个值
-        int max = nums[0];
-        for (int i = 1; i <nums.length; i++) {
-            dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
-            if (dp[i] > max) {
-                max = dp[i];
-            }
-        }
-        // 注意这是每个位置时候的最大值，所以不应该返回结尾，应该是比较得到的最大值
-        return max;
-    }
-}
+      class Solution {
+          public int maxSubArray(int[] nums) {
+              int[] dp = new int[nums.length];
+              dp[0] = nums[0];
+              int res = dp[0];
+              for (int i = 1; i < nums.length; i++) {
+                  dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
+                  res = res > dp[i] ? res : dp[i];
+              }
+              return res;
+          }
+
+      }
 //leetcode submit region end(Prohibit modification and deletion)
 
   }
