@@ -5,29 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc2618a4-2b19-41e1-b1f1-d0f9dfa890f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/BestTimeToBuyAndSellStockIv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/BestTimeToBuyAndSellStockWithTransactionFee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/BestTimeToBuyAndSellStockIv.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/BestTimeToBuyAndSellStockWithTransactionFee.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/IsSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/IsSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/LongestCommonSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/LongestCommonSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/DeleteOperationForTwoStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/DeleteOperationForTwoStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/DistinctSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/DistinctSubsequences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/EditDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/EditDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/JumpGameIi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/JumpGameIi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/LongestPalindromicSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/LongestPalindromicSubsequence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/MaximumSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/MaximumSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/UncrossedLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/UncrossedLines.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/BestTimeToBuyAndSellStock$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/BestTimeToBuyAndSellStock$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/BestTimeToBuyAndSellStock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/BestTimeToBuyAndSellStock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/BestTimeToBuyAndSellStockIi$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/BestTimeToBuyAndSellStockIi$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/BestTimeToBuyAndSellStockIi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/HouseRobber$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/HouseRobber$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/HouseRobberIi$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/HouseRobberIi$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/HouseRobberIii$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/HouseRobberIii$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/HouseRobberIii$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/HouseRobberIii$TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/HouseRobberIii.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/HouseRobberIii.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/LongestContinuousIncreasingSubsequence$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/LongestContinuousIncreasingSubsequence$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/LongestContinuousIncreasingSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/LongestContinuousIncreasingSubsequence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/LongestIncreasingSubsequence$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/LongestIncreasingSubsequence$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/LongestIncreasingSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/leetcode/editor/cn/LongestIncreasingSubsequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/PalindromicSubstrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/PalindromicSubstrings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +233,10 @@
       <workItem from="1684458328973" duration="3524000" />
       <workItem from="1684543902627" duration="3304000" />
       <workItem from="1684632502322" duration="9088000" />
-      <workItem from="1684805680273" duration="5348000" />
+      <workItem from="1684805680273" duration="5393000" />
+      <workItem from="1684976035949" duration="3311000" />
+      <workItem from="1685059850158" duration="7035000" />
+      <workItem from="1685146858271" duration="5645000" />
     </task>
     <task id="LOCAL-00001" summary="11.17">
       <created>1668695085515</created>
@@ -562,7 +553,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684744398769</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Changes">
+      <created>1684811224022</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1684811224022</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Changes">
+      <created>1684811241971</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1684811241971</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

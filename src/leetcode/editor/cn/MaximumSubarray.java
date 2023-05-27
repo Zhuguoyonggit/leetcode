@@ -64,16 +64,28 @@
           // 注意这是每个位置时候的最大值，所以不应该返回结尾，应该是比较得到的最大值
           return max;
       }
+      public int maxSubArray(int[] nums) {
+          int[] dp = new int[nums.length];
+          dp[0] = nums[0];
+          int res = dp[0];
+          for (int i = 1; i < nums.length; i++) {
+              dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
+              res = res > dp[i] ? res : dp[i];
+          }
+          return res;
+      }
 
       //leetcode submit region begin(Prohibit modification and deletion)
       class Solution {
           public int maxSubArray(int[] nums) {
-              int[] dp = new int[nums.length];
-              dp[0] = nums[0];
-              int res = dp[0];
-              for (int i = 1; i < nums.length; i++) {
-                  dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
-                  res = res > dp[i] ? res : dp[i];
+              int res = nums[0];
+              int sum = 0;
+              for (int i = 0; i < nums.length; i++) {
+                  sum += nums[i];
+                  res = sum > res ? sum : res;
+                  if (sum < 0) {
+                      sum = 0;
+                  }
               }
               return res;
           }

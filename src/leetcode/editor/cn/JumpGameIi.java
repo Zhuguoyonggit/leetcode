@@ -45,19 +45,39 @@
       public static void main(String[] args) {
            Solution solution = new JumpGameIi().new Solution();
       }
+      public int jump1(int[] nums) {
+          int n = nums.length;
+          // 记录至少需要多少步到达
+          int[] ints = new int[n];
+          for (int i = 1, j = 0; i < n; i++) {
+              while (j + nums[j] < i) {
+                  j++;
+              }
+              ints[i] = ints[j] + 1;
+          }
+          return ints[n - 1];
+      }
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int jump(int[] nums) {
-        int n = nums.length;
-        // 记录至少需要多少步到达
-        int[] ints = new int[n];
-        for (int i = 1, j = 0; i < n; i++) {
-            while (j + nums[j] < i) {
-                j++;
-            }
-            ints[i] = ints[j] + 1;
+        if (nums.length == 1) {
+            return 0;
         }
-        return ints[n - 1];
+        // 当前范围和下一步范围如果下一步范围超出，说明了到达，count需要每次当前范围到达下一个范围
+        int count = 0;
+        int cur = 0;
+        int next = 0;
+        for (int i = 0; i < nums.length; i++) {
+            next = Math.max(i + nums[i], next);
+            if (i == cur) {
+                count++;
+                cur = next;
+                if (next >= nums.length - 1) {
+                    break;
+                }
+            }
+        }
+        return count;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

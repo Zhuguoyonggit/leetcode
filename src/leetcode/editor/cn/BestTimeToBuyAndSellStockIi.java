@@ -70,15 +70,14 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int maxProfit(int[] prices) {
-        int[] dp = new int[2];
-        dp[0] = -prices[0];
-        dp[1] = 0;
+        // 思考我这个到底是贪心还是模拟？，思路都不是贪心，模拟的话就不太好写了
+        int res = 0;
         for (int i = 1; i < prices.length; i++) {
-            dp[0] = Math.max(dp[0], dp[1] - prices[i]);
-            dp[1] = Math.max(dp[1], dp[0] + prices[i]);
-
+            if (prices[i] > prices[i - 1]) {
+                res += prices[i] - prices[i - 1];
+            }
         }
-        return dp[1];
+        return res;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

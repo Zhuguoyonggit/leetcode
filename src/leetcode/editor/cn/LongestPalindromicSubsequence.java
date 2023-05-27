@@ -37,22 +37,40 @@
       public static void main(String[] args) {
            Solution solution = new LongestPalindromicSubsequence().new Solution();
       }
+      public int longestPalindromeSubseq1(String s) {
+          int len = s.length();
+          int[][] dp = new int[len + 1][len + 1];
+          for (int i = len - 1; i >= 0; i--) {
+              dp[i][i] = 1;
+              for (int j = i + 1; j < len; j++) {
+                  if (s.charAt(i) == s.charAt(j)) {
+                      dp[i][j] = dp[i + 1][j - 1] + 2;
+                  } else {
+                      dp[i][j] = Math.max(dp[i][j], Math.max(dp[i + 1][j], dp[i][j - 1]));
+                  }
+              }
+          }
+          return dp[0][len - 1];
+      }
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int longestPalindromeSubseq(String s) {
-        int len = s.length();
-        int[][] dp = new int[len + 1][len + 1];
-        for (int i = len - 1; i >= 0; i--) {
+        // 题目看清
+        int[][] dp = new int[s.length()][s.length()];
+        //dp[i][j] = dp[i + 1][j - 1] + 2; 可以看出 递推公式是计算不到 i 和j相同时候的情况。
+        for (int i = 0; i < s.length(); i++) {
             dp[i][i] = 1;
-            for (int j = i + 1; j < len; j++) {
+        }
+        for (int i = s.length() - 1; i >= 0; i--) {
+            for (int j = i + 1; j < s.length(); j++) {
                 if (s.charAt(i) == s.charAt(j)) {
                     dp[i][j] = dp[i + 1][j - 1] + 2;
                 } else {
-                    dp[i][j] = Math.max(dp[i][j], Math.max(dp[i + 1][j], dp[i][j - 1]));
+                    dp[i][j] = Math.max(dp[i][j - 1], dp[i + 1][j]);
                 }
             }
         }
-        return dp[0][len - 1];
+        return dp[0][s.length() - 1];
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

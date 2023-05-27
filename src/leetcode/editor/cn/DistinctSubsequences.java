@@ -46,29 +46,46 @@
   
   package leetcode.editor.cn;
 
-  import java.util.jar.JarEntry;
-
   public class DistinctSubsequences{
       public static void main(String[] args) {
            Solution solution = new DistinctSubsequences().new Solution();
       }
+      public int numDistinct1(String s, String t) {
+          int[][] dp = new int[s.length() + 1][t.length() + 1];
+          for (int i = 0; i <= s.length(); i++) {
+              dp[i][0] = 1;
+          }
+          for (int i = 1; i <= s.length(); i++) {
+              for (int j = 1; j <= t.length(); j++) {
+                  if (s.charAt(i - 1) == t.charAt(j - 1)){
+                      dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j];
+                  } else {
+                      dp[i][j] = dp[i - 1][j];
+                  }
+              }
+          }
+          return dp[s.length()][t.length()];
+      }
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int numDistinct(String s, String t) {
-        int[][] dp = new int[s.length() + 1][t.length() + 1];
-        for (int i = 0; i <= s.length(); i++) {
+        // 为了初始化的方便
+        int lens = s.length();
+        int lent = t.length();
+        int[][] dp = new int[lens + 1][lent + 1];
+        for (int i = 0; i <= lens; i++) {
             dp[i][0] = 1;
         }
-        for (int i = 1; i <= s.length(); i++) {
-            for (int j = 1; j <= t.length(); j++) {
-                if (s.charAt(i - 1) == t.charAt(j - 1)){
+        for (int i = 1; i <= lens; i++) {
+            for (int j = 1; j <= lent; j++) {
+                if (s.charAt(i - 1) == t.charAt(j - 1)) {
                     dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j];
                 } else {
                     dp[i][j] = dp[i - 1][j];
                 }
             }
         }
-        return dp[s.length()][t.length()];
+        return dp[lens][lent];
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
